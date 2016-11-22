@@ -16,4 +16,5 @@ Route::get('/', function () {
 });
 Route::get('/user','UserController@index');
 Route::get('/show/{id?}','UserController@show')->middleware('user');
+
 Route::post('/user','UserController@post');
